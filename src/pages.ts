@@ -5,7 +5,7 @@ export const pages = [
     },
     {
         name: 'GIS',
-        path: '/gis',
+        path: '/#/gis',
     },
     {
         name: 'THREE.JS',
