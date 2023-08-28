@@ -4,16 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite -m dev",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "Router": "^2.1.0",
+    "konva": "^9.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0"
+    "react-konva": "^18.2.10",
+    "react-router-dom": "^6.15.0",
+    "rollup-plugin-replace": "^2.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.21",
