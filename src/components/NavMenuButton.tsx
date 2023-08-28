@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react"
+import { useContext } from "react"
 import { Group, Line, Rect } from "react-konva"
 import { windowContext } from "./App"
 

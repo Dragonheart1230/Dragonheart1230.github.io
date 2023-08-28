@@ -1,4 +1,4 @@
-import { Layer, Rect, Stage } from "react-konva"
+import { Layer, Stage } from "react-konva"
 import { NavMenuButton } from "./NavMenuButton"
 import { Route, Routes } from "react-router-dom"
 import { createContext, useState } from "react"

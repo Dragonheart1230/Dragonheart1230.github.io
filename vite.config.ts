@@ -1,3 +1,4 @@
+//@ts-ignore
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import replace from 'rollup-plugin-replace'

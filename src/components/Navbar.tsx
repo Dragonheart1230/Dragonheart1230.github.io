@@ -1,9 +1,7 @@
-import { Link, useLocation } from "react-router-dom"
 import { pages } from "../pages"
-import { Group, Rect, Text } from "react-konva"
+import { Group, Text } from "react-konva"
 import { useContext, useEffect, useRef, useState } from "react"
 import { windowContext } from "./App"
-import { Tween } from "konva/lib/Tween"
 
 export const Navbar = ({ show }: { show: boolean }) => {
 
@@ -18,6 +16,7 @@ export const Navbar = ({ show }: { show: boolean }) => {
 
 
     useEffect(() => {
+        //@ts-ignore
         barRef.current.to({
             Y: show ? 0 : -barHeight,
             duration: 0.5,
@@ -38,6 +37,7 @@ export const Navbar = ({ show }: { show: boolean }) => {
 
             {pages.map((page, i) => {
                 return (
+                    //@ts-ignore
                     <Group x={(0.2 + i) * barWidth / pages.length} onClick={() => { window.location = process.env.NODE_ENV != "development" ? ("https://www.dragonheart1230.github.io" + page.path) : ("http://localhost:5173" + page.path) }}>
                         {/* <Rect x={i * width / pages.length} y={0} width={width * 0.1} height={height * 0.1} fill='red' /> */}
                         {/* <Rect width={barWidth * 0.1} height={height * 0.1} stroke="blue" /> */}
