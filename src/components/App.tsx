@@ -18,6 +18,7 @@ export const App = () => {
                 <Layer>
                     <NavMenuButton callback={() => { setShowNav((prev) => !prev) }} />
                     <Navbar show={showNav} setPage={setPage} setShowNav={setShowNav} />
+                    {page}
                 </Layer>
             </Stage>
         </windowContext.Provider>
