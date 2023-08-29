@@ -10,7 +10,7 @@ export const NavMenuButton = ({ callback = () => { } }: { callback: () => void }
 
 
     return (
-        <Group x={width - (buttonWidth * 2)} y={buttonHeight} onClick={() => { callback() }} onTouchStart={() => { callback() }} >
+        <Group x={width - (buttonWidth * 2)} y={buttonHeight * 0.75} onClick={() => { callback() }} onTouchStart={() => { callback() }} >
             <Rect x={0} y={0} width={buttonWidth} height={buttonHeight} />
             <Line points={[topMiddleRatio * buttonWidth, 0, (1 - topMiddleRatio) * buttonWidth, 0]} stroke='black' strokeWidth={5} lineCap="round" />
             <Line points={[0, buttonHeight / 3, buttonWidth, buttonHeight / 3]} stroke='black' strokeWidth={5} lineCap="round" />

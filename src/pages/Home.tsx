@@ -1,6 +1,13 @@
-import { Text } from "react-konva"
+import { useContext } from "react"
+import { Group, Rect, Text } from "react-konva"
+import { windowContext } from "../components/App"
 export const Home = () => {
+    const { width, height } = useContext(windowContext)
+    const top = height * 0.1
     return (
-        <Text text={"Home"} />
+        <Group y={top}>
+            <Rect x={0} y={0} width={width} height={height} fill={"lightGrey"} />
+            <Text text={"Home"} />
+        </Group>
     )
 }

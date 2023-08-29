@@ -1,5 +1,5 @@
 import { pages } from "../pages"
-import { Group, Text } from "react-konva"
+import { Group, Rect, Text } from "react-konva"
 import { useContext, useEffect, useRef, useState } from "react"
 import { windowContext } from "./App"
 
@@ -33,7 +33,7 @@ export const Navbar = ({ show, setPage, setShowNav }: { show: boolean, setPage: 
 
     return (
         <Group ref={barRef} visible={barVis}>
-            {/* <Rect stroke="red" width={barWidth} height={barHeight} /> */}
+            <Rect fill="grey" width={width} height={barHeight} />
 
             {pages.map((page, i) => {
                 return (
