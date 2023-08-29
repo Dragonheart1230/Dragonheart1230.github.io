@@ -109,7 +109,7 @@ export const BasicShapes = () => {
     return (
         <>
             <Html>
-                <div style={{ top: 0, width: `${width * 0.9}px`, height: `${height * 0.5}px` }}>
+                <div style={{ top: 0, width: `${width * 0.9}px`, height: `${height * 0.9}px` }}>
                     <Controls.Provider>
                         <Controls.Canvas  >
                             <OrbitControls autoRotate />
@@ -121,7 +121,7 @@ export const BasicShapes = () => {
                             {/* <Box /> */}
                             <Extra />
                         </Controls.Canvas>
-                        <Controls title="OPTIONS" />
+                        <Controls title="OPTIONS" anchor={"bottom_left"} />
 
                     </Controls.Provider>
                 </div>
