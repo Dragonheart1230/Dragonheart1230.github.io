@@ -1,10 +1,10 @@
 import { useContext } from "react"
-import { Group, Rect, Text } from "react-konva"
+import { Group, Text } from "react-konva"
 import { windowContext } from "../components/App"
 import { BasicShapes } from "./three/basicShapes"
 
 export const Three = () => {
-    const { width, height } = useContext(windowContext)
+    const { height } = useContext(windowContext)
     const top = height * 0.1
     return (
 

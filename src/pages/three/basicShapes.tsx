@@ -10,7 +10,7 @@ export const BasicShapes = () => {
     extend({ BoxGeometry, MeshBasicMaterial })
     const { width, height } = useContext(windowContext)
 
-    const top = height * 0.1
+    // const top = height * 0.1
 
     return (
         <Html>
