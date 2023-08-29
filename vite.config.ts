@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react(),
     replace({ "process.env.NODE_ENV": JSON.stringify(mode) })
     ],
+
   }
 
 })
