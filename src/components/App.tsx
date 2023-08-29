@@ -10,13 +10,14 @@ export const windowContext = createContext({ width, height })
 export const App = () => {
 
     const [showNav, setShowNav] = useState(false)
+    const [page, setPage] = useState('home')
 
     return (
         <windowContext.Provider value={{ width, height }}>
             <Stage width={width} height={height}>
                 <Layer>
                     <NavMenuButton callback={() => { setShowNav((prev) => !prev) }} />
-                    <Navbar show={showNav} />
+                    <Navbar show={showNav} setPage={setPage} setShowNav={setShowNav} />
                 </Layer>
             </Stage>
         </windowContext.Provider>

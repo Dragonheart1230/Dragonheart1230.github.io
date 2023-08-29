@@ -3,7 +3,7 @@ import { Group, Text } from "react-konva"
 import { useContext, useEffect, useRef, useState } from "react"
 import { windowContext } from "./App"
 
-export const Navbar = ({ show }: { show: boolean }) => {
+export const Navbar = ({ show, setPage, setShowNav }: { show: boolean, setPage: any, setShowNav: any }) => {
 
     const { width, height } = useContext(windowContext)
     // console.log()
@@ -38,7 +38,7 @@ export const Navbar = ({ show }: { show: boolean }) => {
             {pages.map((page, i) => {
                 return (
                     //@ts-ignore
-                    <Group x={(0.2 + i) * barWidth / pages.length} onClick={() => { window.location = process.env.NODE_ENV != "development" ? ("https://www.dragonheart1230.github.io" + page.path) : ("http://localhost:5173" + page.path) }}>
+                    <Group x={(0.2 + i) * barWidth / pages.length} onClick={() => { setPage(page.page); setShowNav(false) }} onTouchStart={() => { setPage(page.page); setShowNav(false) }} >
                         {/* <Rect x={i * width / pages.length} y={0} width={width * 0.1} height={height * 0.1} fill='red' /> */}
                         {/* <Rect width={barWidth * 0.1} height={height * 0.1} stroke="blue" /> */}
                         <Text text={page.name} align="center" verticalAlign="middle" width={((1 + i) * barWidth / (pages.length)) * 0.25} height={height * 0.1} fontSize={20} fill="black" />
