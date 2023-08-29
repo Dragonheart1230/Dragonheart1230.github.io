@@ -3,6 +3,7 @@ import { NavMenuButton } from "./NavMenuButton"
 import { createContext, useState } from "react"
 import { Navbar } from "./Navbar"
 import { Home } from "../pages/Home"
+import { BasicShapes } from "../pages/three/basicShapes"
 
 const width = window.innerWidth
 const height = window.innerHeight
@@ -22,6 +23,7 @@ export const App = () => {
                     <NavMenuButton callback={() => { setShowNav((prev) => !prev) }} />
                 </Layer>
             </Stage>
+
         </windowContext.Provider>
     )
 }

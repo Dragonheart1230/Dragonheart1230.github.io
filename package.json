@@ -11,14 +11,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.80.9",
     "@types/node": "^20.5.7",
+    "@types/three": "^0.155.1",
     "Router": "^2.1.0",
     "konva": "^9.2.0",
+    "konva-utils": "^1.3.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-konva": "^18.2.10",
+    "react-konva-utils": "^1.0.5",
     "react-router-dom": "^6.15.0",
     "react-three": "^0.9.7",
+    "react-three-fiber": "^6.0.13",
     "rollup-plugin-replace": "^2.2.0",
     "three": "^0.155.0"
   },
