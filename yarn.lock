@@ -1223,7 +1223,7 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-fbjs@^0.8.0, fbjs@^0.8.4:
+fbjs@^0.8.4:
   version "0.8.18"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.18.tgz#9835e0addb9aca2eff53295cd79ca1cfc7c9662a"
   integrity sha512-EQaWFK+fEPSoibjNy8IxUtaFOMXcWsY0JaVrQoZR9zC8N2Ygf9iDITPWjUTVIax95b6I742JFLqASHfsag/vKA==
@@ -1998,14 +1998,6 @@ react-three-fiber@^6.0.13:
   integrity sha512-uShQnkMVLvnzwf3YzY9mnzCnpmLpvTQkc0ycrtwk8fyjXmZt2695tLn3tufPF6uxq06UKJRKJcjCVCMXyUcEPQ==
   dependencies:
     "@react-three/fiber" latest
-
-react-three@^0.9.7:
-  version "0.9.7"
-  resolved "https://registry.yarnpkg.com/react-three/-/react-three-0.9.7.tgz#d20d09d589089af733151f8baa12b191689d589b"
-  integrity sha512-oAqC0jdtjnOUai6MdUDPjoDdvavmjmN63jQWqSEE9uA5nWncDO8r/dX0NRMuiynO+ZMjaFDB9/o0jAM7JD06kA==
-  dependencies:
-    fbjs "^0.8.0"
-    object-assign "^4.0.1"
 
 react-use-measure@^2.1.1:
   version "2.1.1"
