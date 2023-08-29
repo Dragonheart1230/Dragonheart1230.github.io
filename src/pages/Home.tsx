@@ -1,7 +1,6 @@
+import { Text } from "react-konva"
 export const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <Text text={"Home"} />
     )
 }

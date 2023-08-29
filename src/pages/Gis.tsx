@@ -1,3 +1,7 @@
+import { Text } from "react-konva"
 export const Gis = () => {
-    return <div>GIS</div>
+    return (
+        <Text text={"GIS"} />
+    )
+
 }

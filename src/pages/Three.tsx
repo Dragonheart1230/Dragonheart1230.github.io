@@ -1,7 +1,8 @@
+import { Text } from "react-konva"
+
 export const Three = () => {
     return (
-        <div>
-            <h1>Three</h1>
-        </div>
+        <Text text={"Three"} />
+
     )
 }
