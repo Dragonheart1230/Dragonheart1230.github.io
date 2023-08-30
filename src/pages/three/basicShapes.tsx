@@ -68,7 +68,7 @@ export const BasicShapes = () => {
             min: 1,
             max: Infinity,
 
-            value: 1
+            value: 0
 
         })
         return (
