@@ -11,19 +11,29 @@
 //     )
 // }
 
-import { Link, Route } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 
+const Hello = () => {
+    return (
+        <h1>hello</h1>
+    )
+}
+const About = () => {
+    return (
+        <h1>about</h1>
+    )
+}
 
 export const App = () => {
     return (
         <div>
             <Link to={"/About"}>Go to About page</Link>
-            <Route path="/">
-                <h1>hello</h1>
-            </Route>
-            <Route path="/About">
-                <h1>About</h1>
-            </Route>
+            <Routes>
+                <Route path="/" element={<Hello />} />
+
+                <Route path="/About" element={<About />} />
+
+            </Routes>
         </div>
     )
 }
