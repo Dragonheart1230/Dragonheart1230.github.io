@@ -1,7 +1,7 @@
 import { pages } from "../pages"
 import { Group, Rect, Text } from "react-konva"
 import { useContext, useEffect, useRef, useState } from "react"
-import { windowContext } from "./App"
+import { windowContext } from "./App.tsx.yeolde"
 
 export const Navbar = ({ show, setPage, setShowNav }: { show: boolean, setPage: any, setShowNav: any }) => {
 

@@ -1,28 +1,29 @@
-import { Layer, Stage } from "react-konva"
-import { NavMenuButton } from "./NavMenuButton"
-import { createContext, useState } from "react"
-import { Navbar } from "./Navbar"
-import { Home } from "../pages/Home"
+// import { createContext } from "react"
+// import { NavbarComponent } from "./NavBarComponent"
 
-const width = window.innerWidth
-const height = window.innerHeight
-export const windowContext = createContext({ width, height })
+// const width = window.innerWidth
+// const height = window.innerHeight
+// export const windowContext = createContext({ width, height, stageRef: null })
+
+// export const App = () => {
+//     return (
+//         <NavbarComponent />
+//     )
+// }
+
+import { Link, Route } from "react-router-dom";
+
 
 export const App = () => {
-
-    const [showNav, setShowNav] = useState(false)
-    const [page, setPage] = useState(<Home />)
-
     return (
-        <windowContext.Provider value={{ width, height }}>
-            <Stage width={width} height={height}>
-                <Layer>
-                    {page}
-                    <Navbar show={showNav} setPage={setPage} setShowNav={setShowNav} />
-                    <NavMenuButton callback={() => { setShowNav((prev) => !prev) }} />
-                </Layer>
-            </Stage>
-
-        </windowContext.Provider>
+        <div>
+            <Link to={"/About"}>Go to About page</Link>
+            <Route path="/">
+                <h1>hello</h1>
+            </Route>
+            <Route path="/About">
+                <h1>About</h1>
+            </Route>
+        </div>
     )
 }

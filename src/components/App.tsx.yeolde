@@ -1,0 +1,35 @@
+import { Layer, Stage } from "react-konva"
+import { NavMenuButton } from "./NavMenuButton"
+import { createContext, useEffect, useRef, useState } from "react"
+import { Navbar } from "./Navbar"
+import { Home } from "../pages/Home"
+import { BasicMap } from "../pages/GIS/BasicMap"
+
+const width = window.innerWidth
+const height = window.innerHeight
+export const windowContext = createContext({ width, height, stageRef: null })
+
+export const AppYeOlde = () => {
+
+    const [refState, setRefState] = useState(null)
+    const [showNav, setShowNav] = useState(false)
+    const [page, setPage] = useState(<Home />)
+    const stageRef = useRef(null)
+    useEffect(() => {
+        setRefState(stageRef.current)
+    }, [stageRef.current])
+
+    return (
+        <windowContext.Provider value={{ width, height, stageRef: refState }}>
+            <BasicMap />
+            {/* <Stage width={width} height={height} ref={stageRef}>
+                <Layer>
+                    {page}
+                    <Navbar show={showNav} setPage={setPage} setShowNav={setShowNav} />
+                    <NavMenuButton callback={() => { setShowNav((prev) => !prev) }} />
+                </Layer>
+            </Stage> */}
+
+        </windowContext.Provider>
+    )
+}

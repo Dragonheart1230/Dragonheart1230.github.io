@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { Group, Line, Rect } from "react-konva"
-import { windowContext } from "./App"
+import { windowContext } from "./App.tsx.yeolde"
 
 export const NavMenuButton = ({ callback = () => { } }: { callback: () => void }) => {
     const { width, height } = useContext(windowContext)

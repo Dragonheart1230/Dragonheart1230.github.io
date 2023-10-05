@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { Group, Text } from "react-konva"
-import { windowContext } from "../components/App"
+import { windowContext } from "../components/App.tsx.yeolde"
 import { BasicShapes } from "./three/basicShapes"
 
 export const Three = () => {

@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { Group, Rect, Text } from "react-konva"
-import { windowContext } from "../components/App"
+import { windowContext } from "../components/App.tsx.yeolde"
 export const Home = () => {
     const { width, height } = useContext(windowContext)
     const top = height * 0.1
