@@ -1,9 +1,9 @@
-import { BasicShapes } from "./basicShapes";
+// import { BasicShapes } from "./basicShapes";
 
-export const threePagesList = [
+// export const threePagesList = [
 
-    {
-        name: 'Basic Shapes',
-        feature: <BasicShapes />
-    }
-]
+//     {
+//         name: 'Basic Shapes',
+//         feature: <BasicShapes />
+//     }
+// ]
